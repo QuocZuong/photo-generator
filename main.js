@@ -19,8 +19,6 @@ form.addEventListener("submit", async (e) => {
 
     const image = await response.json();
 
-    console.log("test: ", image.image.data[0].url);
-
     const result = document.querySelector("#result");
     result.innerHTML = `<img src="${image.image.data[0].url}" width="512" />`;
 });
